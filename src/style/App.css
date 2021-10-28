@@ -1,0 +1,29 @@
+body {
+  /* text-align: center;
+  /* height: 3000px; */
+  background-color: #282c34; 
+}
+
+.navbar-trans, .banner-divider{
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.navbar-trans::after{
+  transition-duration: 3s;
+}
+
+.navbar-bk {
+  transition-duration: 1s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.7,1,.7,1);
+  background-color: rgb(255, 255, 255);
+}
+.banner-divider{
+  border-bottom: 1px solid rgba(197, 20, 20, 0.4);
+}
+
+.banner-block {
+  
+  padding: 220px 0 130px;
+}
+
