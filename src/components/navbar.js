@@ -1,33 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
-import logo from '../img/moonozTag.svg';
+import logoBlk from '../img/moonozTag.svg';
+import logoWht from '../img/MoonozTagwht.svg'
 
-export default function navbar() {
+
+
+function NavBar() {
+    console.log(window.scrollY);
+
+    const [navbar, setNavBar] = useState(false);
+    const [logo, setLogo] = useState(true);
+
+    const navScroll = () => {
+
+        if (window.scrollY >= 80) {
+            setNavBar(true);
+
+        } else {
+            setNavBar(false);
+        }
+    };
+
+
+
+    window.addEventListener('scroll', navScroll);
+
+
     return (
-        <header class="navBar" >
-            <Navbar fixed='top'>
+        <header  >
+            <Navbar id='navBar-Scroll' className={navbar ? 'navbar-bk' : 'navbar-trans'} fixed="top" expand="lg">
                 <Container>
                     <Navbar.Brand>
                         <img
-                            src={logo}
-                            width="150"
+                            src={setLogo ? logoBlk : logoWht }
+                            width="100"
                             height="auto"
                             className="d-inline-block align-top"
                             alt="Moonoz Logo Tag"
                         />
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
+                    <Navbar.Toggle />
+                    <Navbar.Collapse >
                         <Container>
                             <Nav className="justify-content-end" activeKey="/home">
                                 <Nav.Item>
-                                    <Nav.Link >Home</Nav.Link>
+                                    <Nav.Link >HOME</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link>About Me</Nav.Link>
+                                    <Nav.Link>ABOUT ME</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link >Contact Me</Nav.Link>
+                                    <Nav.Link >CONTACT</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
 
@@ -41,3 +64,5 @@ export default function navbar() {
         </header>
     )
 }
+
+export default NavBar;

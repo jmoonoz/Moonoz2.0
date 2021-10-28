@@ -1,7 +1,5 @@
 body {
-  /* text-align: center;
-  /* height: 3000px; */
-  background-color: #282c34; 
+  
 }
 
 .navbar-trans, .banner-divider{
@@ -19,11 +17,25 @@ body {
   background-color: rgb(255, 255, 255);
 }
 .banner-divider{
-  border-bottom: 1px solid rgba(197, 20, 20, 0.4);
+  /* color: rgb(255, 255, 255); */
+  border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .banner-block {
-  
-  padding: 220px 0 130px;
+  background-image: url(/src/img/01.jpg);
+  /* background-repeat: no-repeat; */
+  /* background-size: inherit; */
+  background-size: cover;
+  background-position: center;
+  padding: 350px 0 130px;
+  background-color: transparent;
 }
-
+.banner-block .banner-title{
+  font-size: 70px;
+  color: #fff;
+  line-height: 1;
+}
+.banner-block .banner-text{
+  font-size: 25px;
+  color: #fff;
+}

@@ -1,23 +1,39 @@
 
-import './App.css';
+import { Container, Col, Row } from 'react-bootstrap';
+
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Container className="banner-block parallax-window" data-parallax="scroll" data-image-src="/src/img/01.jpg" fluid>
+      <Container>
+
+        <Row>
+          <Col sm={6}>
+            <div class="banner-divider">
+              <h1 class="banner-title">
+                Joel
+                <br />
+                Muñoz
+                <i class="fab fa-linkedin-in"></i>
+              </h1>
+              <p class="banner-text">Web Designer &amp; Front-end Developer</p>
+            </div>
+            <ul class="list-inline">
+              <br />
+              <br />
+            </ul>
+
+          </Col>
+
+        </Row>
+
+
+      </Container>
+    </Container>
+
   );
 }
 
