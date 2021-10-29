@@ -2,16 +2,23 @@ import { Container, Col, Row } from 'react-bootstrap';
 
 function About() {
     return (
-        <Container fluid>
+        <Container id='About' fluid>
             <Container>
-            <Row>
-                <Col sm={3}>
+                <Row >
+                    <Col className='sec-text'  sm={3}>
+                        <h2>
+                            About
+                        </h2>
+                        <p>sjf laksjdf;lk </p>
 
-                </Col>
-                <Col sm={8}>
+                    </Col>
+                    <Col className='right-col'sm={8}>
+                    <p>
+                        djfsfush
+                    </p>
 
-                </Col>
-            </Row>
+                    </Col>
+                </Row>
 
             </Container>
         </Container>
