@@ -46,7 +46,7 @@ body {
   color: #fff;
   line-height: 1;
 }
-.banner-block .banner-text{
+.banner-block .banner-text, .nav-item{
   font-size: 25px;
   color: #fff;
 }
@@ -66,8 +66,8 @@ body {
   margin-top: 10px;
 }
 .footer-sec{
-  background-color: rgb(37, 36, 36);
-  color: #fff;
+  background-color: rgba(226, 226, 226, 0.4);
+  color: rgb(0, 0, 0);
   padding: 2% 0;
 }
 
@@ -75,7 +75,7 @@ body {
   font-size: 20px;
 }
 span{
-  color: red;
+  color: rgb(95, 41, 55);
 }
 
 /**
@@ -84,6 +84,6 @@ span{
 |--------------------------------------------------
 */
 
-.form-label, .banner-text{
+.form-label, .banner-text, .nav-item{
   font-family: 'Covered By Your Grace', cursive;
 }

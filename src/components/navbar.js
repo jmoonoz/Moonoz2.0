@@ -31,6 +31,7 @@ function NavBar() {
             <Navbar id='navBar-Scroll' className={navbar ? 'navbar-bk' : 'navbar-trans'} fixed="top" expand="lg">
                 <Container>
                     <Navbar.Brand>
+                    <a href="#header">
                         <img
                             src={navbar ? logoBlk : logoWht}
                             width="100"
@@ -38,19 +39,20 @@ function NavBar() {
                             className="d-inline-block align-top"
                             alt="Moonoz Logo Tag"
                         />
+                    </a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse >
                         <Container>
                             <Nav className="justify-content-end" activeKey="/home">
                                 <Nav.Item>
-                                    <Nav.Link >HOME</Nav.Link>
+                                    <Nav.Link href='#header' >HOME</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link>ABOUT</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link >CONTACT</Nav.Link>
+                                    <Nav.Link href="#footer">CONTACT</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
 

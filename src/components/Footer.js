@@ -18,19 +18,19 @@ function Footer() {
                             <Row>
                                 <Form >
                                     <Form.Group controlId="enterName">
-                                        <Form.Label>Name<span>*</span></Form.Label>
+                                        <Form.Label>Name<span> *</span></Form.Label>
                                         <Form.Control type="text" placeholder="Name" name="name" />
                                     </Form.Group>
                                     <Form.Group controlId="formGroupEmail">
-                                        <Form.Label>Email<span>*</span></Form.Label>
+                                        <Form.Label>Email<span> *</span></Form.Label>
                                         <Form.Control type="email" placeholder="Email" name="email" />
                                     </Form.Group>
                                     <Form.Group controlId="enterSubject">
-                                        <Form.Label>Subject<span>*</span></Form.Label>
+                                        <Form.Label>Subject<span> *</span></Form.Label>
                                         <Form.Control type="text" placeholder="Email Subject" name="subject" />
                                     </Form.Group>
                                     <Form.Group controlId="exampleForm ControlTextarea1">
-                                        <Form.Label>Message<span>*</span></Form.Label>
+                                        <Form.Label>Message<span> *</span></Form.Label>
                                         <Form.Control
                                             as="textarea"
                                             rows={3}
