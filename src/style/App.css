@@ -25,6 +25,7 @@ body {
   transition-property: all;
   transition-timing-function: cubic-bezier(.7,1,.7,1);
   background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(170, 170, 170, 0.2);
 }
 .nav-item{
   padding: 20px;
@@ -80,10 +81,26 @@ span{
 
 /**
 |--------------------------------------------------
-| font
+| universal sections
 |--------------------------------------------------
 */
 
 .form-label, .banner-text, .nav-item{
   font-family: 'Covered By Your Grace', cursive;
+}
+#About {
+  padding:100px 15px;
+}
+.sec-text{
+  text-align: end;
+}
+.right-col{
+  margin-left: 8%;
+}
+p{
+  color: #a6a7aa;
+}
+
+{
+  background-color: #fafafa!important;
 }
