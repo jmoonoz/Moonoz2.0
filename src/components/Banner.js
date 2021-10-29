@@ -15,7 +15,7 @@ function Banner() {
                                 Muñoz
                                 <i class="fab fa-linkedin-in"></i>
                             </h1>
-                            <p class="banner-text">Web Designer &amp; Front-end Developer</p>
+                            <p class="banner-text">Front-end Developer &amp; Graphic Designer</p>
                         </div>
                         <ul class="list-inline">
                             <br />

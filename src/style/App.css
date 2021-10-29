@@ -1,6 +1,14 @@
+@font-family: 'Covered By Your Grace', cursive;
+
+
 body {
   
 }
+/**
+|--------------------------------------------------
+| NavBar
+|--------------------------------------------------
+*/
 
 .navbar-trans, .banner-divider{
   transition-duration: 1s;
@@ -18,15 +26,17 @@ body {
   transition-timing-function: cubic-bezier(.7,1,.7,1);
   background-color: rgb(255, 255, 255);
 }
-.banner-divider{
-  /* color: rgb(255, 255, 255); */
-  border-bottom: 1px solid rgb(255, 255, 255);
+.nav-item{
+  padding: 20px;
 }
+/**
+|--------------------------------------------------
+| Banner "header"
+|--------------------------------------------------
+*/
 
 .banner-block {
   background-image: url(/src/img/01.jpg);
-  /* background-repeat: no-repeat; */
-  /* background-size: inherit; */
   background-size: cover;
   background-position: center;
   padding: 220px 0 130px;
@@ -44,4 +54,36 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   padding-bottom: 20px;
   margin-bottom: 35px;
+}
+
+
+/**
+|--------------------------------------------------
+| Footer
+|--------------------------------------------------
+*/
+.btn{
+  margin-top: 10px;
+}
+.footer-sec{
+  background-color: rgb(37, 36, 36);
+  color: #fff;
+  padding: 2% 0;
+}
+
+.form-label{
+  font-size: 20px;
+}
+span{
+  color: red;
+}
+
+/**
+|--------------------------------------------------
+| font
+|--------------------------------------------------
+*/
+
+.form-label, .banner-text{
+  font-family: 'Covered By Your Grace', cursive;
 }

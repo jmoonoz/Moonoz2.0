@@ -1,11 +1,16 @@
+import { Container } from 'react-bootstrap';
 import Banner from './components/Banner';
+import Footer from './components/Footer';
 
 
 
 function App() {
 
   return (
-    <Banner />
+    <>
+      <Banner />
+      <Footer />
+    </>
   );
 }
 
