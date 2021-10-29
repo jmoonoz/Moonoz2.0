@@ -88,7 +88,7 @@ span{
 .form-label, .banner-text, .nav-item{
   font-family: 'Covered By Your Grace', cursive;
 }
-#About {
+#About, #Design {
   padding:100px 15px;
 }
 .sec-text{
@@ -101,6 +101,6 @@ p{
   color: #a6a7aa;
 }
 
-{
+#Design {
   background-color: #fafafa!important;
 }

@@ -1,7 +1,7 @@
-import { Container } from 'react-bootstrap';
 import Banner from './components/Banner';
 import Footer from './components/Footer';
 import About from './components/About';
+import Design from './components/Design';
 
 
 
@@ -11,6 +11,7 @@ function App() {
     <>
       <Banner />
       <About />
+      <Design />
       <Footer />
     </>
   );
