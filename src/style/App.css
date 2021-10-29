@@ -57,6 +57,39 @@ body {
   margin-bottom: 35px;
 }
 
+.social-icons {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  vertical-align: middle;
+  padding: 9px;
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.social-icons:hover {
+  color: #515769;
+  background: #fff;
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
 
 /**
 |--------------------------------------------------
