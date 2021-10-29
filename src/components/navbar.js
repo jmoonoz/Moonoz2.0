@@ -6,10 +6,11 @@ import logoWht from '../img/MoonozTagwht.svg'
 
 
 function NavBar() {
-    console.log(window.scrollY);
-
     const [navbar, setNavBar] = useState(false);
     const [logo, setLogo] = useState(true);
+
+    console.log(window.scrollY);
+
 
     const navScroll = () => {
 
@@ -18,13 +19,12 @@ function NavBar() {
 
         } else {
             setNavBar(false);
+
         }
     };
 
 
-
     window.addEventListener('scroll', navScroll);
-
 
     return (
         <header  >
@@ -32,7 +32,7 @@ function NavBar() {
                 <Container>
                     <Navbar.Brand>
                         <img
-                            src={setLogo ? logoBlk : logoWht }
+                            src={navbar ? logoBlk : logoWht}
                             width="100"
                             height="auto"
                             className="d-inline-block align-top"
@@ -47,7 +47,7 @@ function NavBar() {
                                     <Nav.Link >HOME</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link>ABOUT ME</Nav.Link>
+                                    <Nav.Link>ABOUT</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link >CONTACT</Nav.Link>

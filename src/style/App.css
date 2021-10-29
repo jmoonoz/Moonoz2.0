@@ -3,6 +3,8 @@ body {
 }
 
 .navbar-trans, .banner-divider{
+  transition-duration: 1s;
+  transition-property: all;
   background-color: transparent;
   border-bottom: 1px solid rgba(255,255,255,.2);
 }
@@ -27,8 +29,7 @@ body {
   /* background-size: inherit; */
   background-size: cover;
   background-position: center;
-  padding: 350px 0 130px;
-  background-color: transparent;
+  padding: 220px 0 130px;
 }
 .banner-block .banner-title{
   font-size: 70px;
@@ -38,4 +39,9 @@ body {
 .banner-block .banner-text{
   font-size: 25px;
   color: #fff;
+}
+.banner-block .banner-divider{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  padding-bottom: 20px;
+  margin-bottom: 35px;
 }
