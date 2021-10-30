@@ -30,8 +30,8 @@ function NavBar() {
         <header  >
             <Navbar id='navBar-Scroll' className={navbar ? 'navbar-bk' : 'navbar-trans'} fixed="top" expand="lg">
                 <Container>
-                    <Navbar.Brand>
-                    <a href="#header">
+                    <Navbar.Brand href='#header'>
+                    
                         <img
                             src={navbar ? logoBlk : logoWht}
                             width="100"
@@ -39,11 +39,10 @@ function NavBar() {
                             className="d-inline-block align-top"
                             alt="Moonoz Logo Tag"
                         />
-                    </a>
+                    
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse >
-                        <Container>
                             <Nav className="justify-content-end" activeKey="/home">
                                 <Nav.Item>
                                     <Nav.Link href='#header' >HOME</Nav.Link>
@@ -52,7 +51,10 @@ function NavBar() {
                                     <Nav.Link href='#About'>ABOUT</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link href='#Design'>Design</Nav.Link>
+                                    <Nav.Link href='#Design'>DESIGN</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link href='#Shop'>SHOP</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link href="#footer">CONTACT</Nav.Link>
@@ -61,7 +63,7 @@ function NavBar() {
 
                                 </Nav.Item>
                             </Nav>
-                        </Container>
+                        
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
