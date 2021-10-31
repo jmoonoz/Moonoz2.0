@@ -11,6 +11,16 @@
     />
    
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- email js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init(${process.env.REACT_APP_USER_KEY});
+      })();
+    </script>
     <!-- bootstrap bundles -->
     <link
       rel="stylesheet"

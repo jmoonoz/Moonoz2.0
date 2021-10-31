@@ -1,6 +1,32 @@
 import { Button, Container, Col, Form, Row } from 'react-bootstrap';
+import emailjs from 'emailjs-com';
 
-function Footer() {
+const API_SER = process.env.REACT_APP_SERVICE_KEY;
+const API_TEMP = process.env.REACT_APP_TEMPLATE_KEY;
+const API_USER = process.env.REACT_APP_USER_KEY;
+
+function Footer(prop) {
+    function sendEmail(e) {
+        e.preventDefault();
+    
+        console.log(process.env.NODE_ENV);
+    
+        emailjs.sendForm(
+          API_SER,
+          API_TEMP,
+          e.target,
+          API_USER
+        )
+          .then(
+            (result) => {
+              console.log(result.text);
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
+        e.target.reset();
+      }
     return (
         <Container id="footer" className="footer-sec" fluid>
             <Container>

@@ -5,7 +5,7 @@ function Shop() {
         <Container id='Shop' fluid>
             <Container>
                 <Row >
-                    <Col className='sec-text' sm={3}>
+                    <Col className='sec-text sm-sec-text' sm={3}>
                         <h2>
                             Shop
                         </h2>

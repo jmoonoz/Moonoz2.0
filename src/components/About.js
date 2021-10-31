@@ -5,7 +5,7 @@ function About() {
         <Container id='About' fluid>
             <Container>
                 <Row >
-                    <Col className='sec-text'  sm={3}>
+                    <Col className='sec-text sm-sec-text'  sm={3}>
                         <h2>
                             About
                         </h2>
