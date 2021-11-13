@@ -1,11 +1,14 @@
 import { Button, Container, Col, Form, Row } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 
+// access key tokems
 const API_SER = process.env.REACT_APP_SERVICE_KEY;
 const API_TEMP = process.env.REACT_APP_TEMPLATE_KEY;
 const API_USER = process.env.REACT_APP_USER_KEY;
 
 function Footer(prop) {
+
+    // function to send email, Requires emailJS
     function sendEmail(e) {
         e.preventDefault();
     
@@ -42,7 +45,7 @@ function Footer(prop) {
                                 </p>
                             </Row>
                             <Row>
-                                <Form >
+                                <Form onSubmit={sendEmail}>
                                     <Form.Group controlId="enterName">
                                         <Form.Label>Name<span> *</span></Form.Label>
                                         <Form.Control type="text" placeholder="Name" name="name" />

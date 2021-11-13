@@ -1,5 +1,5 @@
 import { Container, Col, Image, Row } from 'react-bootstrap';
-import Design1 from '../img/MoonozDisenoz.jpg';
+
 
 function Design() {
     return (
@@ -18,13 +18,13 @@ function Design() {
                             <Col sm='8'>
                                 <div class='design'>
                                     <div class='design-overlay'>
-                                        <Image className='img-responsive' src={Design1} />
+                                        <img class="full-width img-responsive" src="img/397x300/03.jpg" alt="Portfolio Image" />
                                     </div>
                                 </div>
 
                             </Col>
                             <Col sm='3'>
-                                <Image className='img-responsive' src={Design1} />
+                                <Image className='img-responsive' src={} />
 
                             </Col>
                         </Row>
