@@ -1,17 +1,32 @@
-@font-family: 'Covered By Your Grace', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Hind:wght@300;500;600;700&display=swap');
 
 
-body {
-  background-color: #fff;
+
+@media (max-width: 768px) {
   
+  .sm-sec-text {
+    text-align: left;
+  }
+  .navbar-nav{
+    text-align: right;
+  }
+
+  .chat-sec{
+    padding: 6% !important;
+  }
+  .right-col{
+    margin-left: 0%;
+  }
 }
+
+
 /**
 |--------------------------------------------------
 | NavBar
 |--------------------------------------------------
 */
 
-.navbar-trans, .banner-divider{
+/* .navbar-trans, .banner-divider{
   transition-duration: 1s;
   transition-property: all;
   background-color: transparent;
@@ -38,25 +53,30 @@ body {
 }
 a{
   color: #fff;
-}
+} */
 /**
 |--------------------------------------------------
 | Banner "header"
 |--------------------------------------------------
 */
-
-.banner-block {
+.design-block{
+  background-image: url(/src/img/design-BG.jpg);
+}
+.banner-block{
   background-image: url(/src/img/01.jpg);
+}
+
+.banner-block, .design-block {
   background-size: cover;
   background-position: center;
   padding: 220px 0 130px;
 }
-.banner-block .banner-title{
+.design-block, .banner-block, .banner-title{
   font-size: 70px;
   color: #fff;
   line-height: 1;
 }
-.banner-block .banner-text{
+.banner-text{
   font-size: 25px;
   color: #fff;
 }
@@ -75,7 +95,7 @@ a{
   text-align: center;
   border-radius: 50%;
   vertical-align: middle;
-  padding: 9px;
+  padding: 10.5px;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -103,6 +123,8 @@ a{
 | Design
 |--------------------------------------------------
 */
+
+
 
 .design .design-overlay {
   position: relative;
@@ -167,21 +189,29 @@ a{
   width: 100%;
   overflow-y: hidden;
 }
-
 /**
 |--------------------------------------------------
-| Footer
+| Contact
 |--------------------------------------------------
 */
 .btn{
   margin-top: 10px;
 }
-.footer-sec{
-  background-color: rgba(226, 226, 226, 0.4);
-  color: rgb(0, 0, 0);
-  padding: 2% 0;
+.contact-header{
+  background-image: url(/src/img/01.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 120px 0;
 }
-
+.chat-sec{
+  backdrop-filter: blur(4px) saturate(160%);
+  -webkit-backdrop-filter: blur(4px) saturate(160%);
+  background-color: rgba(0, 0, 0, 0.43);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: #fff;
+  padding: 2.5%;
+}
 .form-label{
   font-size: 20px;
 }
@@ -189,43 +219,26 @@ span{
   color: rgb(95, 41, 55);
 }
 
+
+
+
 /**
 |--------------------------------------------------
-| universal sections
+| Footer
 |--------------------------------------------------
 */
 
-.form-label, .banner-text, .nav-item{
-  font-family: 'Covered By Your Grace', cursive;
-}
-#About, #Design, #Shop {
-  padding:100px 15px;
-}
-.sec-text{
-  text-align: right;
-}
-.right-col{
-  margin-left: 8%;
-}
-p{
-  color: #a6a7aa;
+.footer-sec{
+  background-color: rgba(226, 226, 226, 0.4);
+  color: rgb(0, 0, 0);
+  padding: 2% 0;
 }
 
-#Design {
-  background-color: #fafafa!important;
-}
-
-@media (max-width: 768px) {
-  .sm-sec-text {
-    text-align: left;
-  }
+.footer-text{
+  font-size: 14px;
+  padding-left: 11px;
 }
 
 
-/* @media only screen and (max-width: 600px) {
- .grid-item{
-   height: auto;
-   max-width: 100%;
-   display: inline-block;
- }
-} */
+
+

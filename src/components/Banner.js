@@ -5,7 +5,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 
 function Banner() {
     return (
-        <Container id='header'className="banner-block parallax-window" data-parallax="scroll" data-image-src="/src/img/01.jpg" fluid>
+        <Container id='header' className="banner-block parallax-window" data-parallax="scroll" data-image-src="/src/img/01.jpg" fluid>
             <Container>
 
                 <Row>

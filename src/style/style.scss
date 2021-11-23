@@ -1,13 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Hind:wght@300;500;600;700&display=swap');
+/**
+|--------------------------------------------------
+| universal sections
+|--------------------------------------------------
+*/
+
+::selection{
+  background: rgb(95, 41, 55);
+  color: #fff;
+}
+a{
+  color: none !important;
+  text-decoration: none !important;
+}
+body {
+  background-color: #fff;
+  
+}
+#Design {
+  background-color: #fafafa!important;
+}
+.form-label, .banner-text{
+  font-family: 'Covered By Your Grace', cursive;
+}
+#About, #Design, #Shop {
+  padding:100px 15px;
+}
+.banner-block .contact-header{
+  background-size: cover;
+  background-position: center;
+  padding: 220px 0 130px;
+}
+.right-col{
+  margin-left: 8%;
+}
+.sec-text{
+  text-align: right;
+}
+p{
+  font-size: 15px;
+  color: #a6a7aa;
+}
+
+h1, h2, h3, h4, h5, h6, .nav-link {
+  font-family: 'Hind', sans-serif;
+  font-weight: 700 !important;
+}
+h1{
+  font-size: 70px;
+}
+
+
+h2{
+  color: #515769;
+  line-height: 1.4;
+  margin: 0 0 15px;
+}
+h6{
+  font-size: 14px;
+}
+
+h6{
+  font-weight: 700;
+  color: #515769;
+  line-height: 1.4;
+  margin: 0 0 15px;
+  font-size: 14px;
+}
+
+.nav-link{
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/**
+|--------------------------------------------------
+| NavBar
+|--------------------------------------------------
+*/
+
+.navbar-trans, .banner-divider{
+  
+  transition-duration: 1s;
+  transition-property: all;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255,255,255,.2);
+  .nav-link{
+    color: #fff !important;
+  }
+}
+
+.nav-link:hover{
+  text-decoration: underline !important;
+}
+.navbar-trans::after{
+  transition-duration: 3s;
+}
+
+.navbar-bk {
+  transition-duration: 1s;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(.7,1,.7,1);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.13);
+  border-bottom: 1px solid rgba(170, 170, 170, 0.2);
+}
+.nav-link{
+  color: #fff;
+  padding: 20px !important;
+  font-weight: 600 !important;
+}
+.nav-item{
+  color: #fff;
+  font-size: 1px;
+}
 .row > *{
     padding-right: 0 !important;
     padding-left: 0 !important;
   }
 
-  // .grid-item {
-  //   img{
-  //   object-fit: cover;
-    
-  // }
-
-  // }
+.col{
+  img{
+    width: 100%;
+  }
+}
+a{
+  color: none;
+  text-decoration: none;
+}
     
