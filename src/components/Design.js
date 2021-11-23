@@ -13,7 +13,7 @@ function Design() {
                                     Diseñoz
                                     <i class="fab fa-linkedin-in"></i>
                                 </h1>
-                                <p class="banner-text">Free Lance Graphic Designer</p>
+                                <p class="banner-text">Freelance Graphic Designer</p>
                             </div>
                     
                     </Col>
