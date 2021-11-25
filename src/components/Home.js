@@ -2,13 +2,13 @@ import Banner from './Banner';
 import About from './About';
 import Design from './Design';
 import Shop from './Shop';
-import { Container, Col, Row } from 'react-bootstrap';
+import { Container, Col, ProgressBar, Row, ListGroup, ListGroupItem } from 'react-bootstrap';
 
 function Home() {
     return (
         <>
 
-            <Container id='header' className="banner-block" data-parallax="scroll"  fluid>
+            <Container id='header' className="banner-block" data-parallax="scroll" fluid>
                 <Container>
                     <Row>
                         <Col sm={6}>
@@ -33,6 +33,8 @@ function Home() {
             <Container id='About' fluid>
                 <Container>
                     <Row >
+
+
                         <Col className='sec-text sm-sec-text' sm={3}>
                             <h2>
                                 About
@@ -41,18 +43,52 @@ function Home() {
 
                         </Col>
                         <Col className='right-col' sm={8}>
-                            <h3>
-                                Hello, My name is Joel Muñoz!
-                            </h3>
+                            <Row>
 
-                            <p>
-                                I'm Software Engineer. My expertise is in Front End Development to create stunning user friendly experience. Welcome to my work, have a look around and enjoy!
-                            </p>
+                                <h3>
+                                    Hello, My name is Joel Muñoz!
+                                </h3>
 
+                                <p>
+                                    I'm Software Engineer. My expertise is in Front End Development to create stunning user friendly experience. Welcome to my work, have a look around and enjoy!
+                                </p>
+                            </Row>
+                            <Row>
+                                <ProgressBar animated now={60} />
+                            </Row>
                         </Col>
                     </Row>
 
                 </Container>
+            </Container>
+            <Container id='Experience' fluid>
+                <Container>
+                    <Row>
+                        <Col className='sec-text sm-sec-text' sm={3}>
+                            <h2>
+                                Experience
+                            </h2>
+                            <p>Here to code you a pixel perfect web</p>
+
+                        </Col>
+                        <Col className='right-col' sm={8}>
+                            <Row className='sec-text-align' >
+                                <Col className='exp-info'>
+                                    {/* icon  */}
+                                    <h5>
+                                        Languages I Code:
+                                    </h5>
+                                    <p>HTML, CSS, JavaScript, C++, Python</p>
+                                </Col>
+                                <Col className='exp-info'>
+                                    <h5>Building tools:</h5>
+                                    <p> React, Bootstrap, Chrome Dev. Tool, Git, Visual Studios, Xcode, Terminal</p>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+                </Container>
+
             </Container>
             <Container id='Design' fluid>
                 <Container>

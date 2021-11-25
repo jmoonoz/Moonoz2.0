@@ -23,7 +23,7 @@ body {
 .form-label, .banner-text{
   font-family: 'Covered By Your Grace', cursive;
 }
-#About, #Design, #Shop {
+#About, #Design, #Shop, #Experience {
   padding:100px 15px;
 }
 .banner-block .contact-header{
@@ -66,6 +66,20 @@ h6{
   line-height: 1.4;
   margin: 0 0 15px;
   font-size: 14px;
+}
+.row > *{
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.col{
+  img{
+    width: 100%;
+  }
+}
+
+li {
+  list-style: none;
 }
 
 
@@ -113,18 +127,24 @@ h6{
   color: #fff;
   font-size: 1px;
 }
-.row > *{
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-  }
 
-.col{
-  img{
-    width: 100%;
-  }
+/**
+|--------------------------------------------------
+| Banner "header"
+|--------------------------------------------------
+*/
+
+.sec-text-align{
+  text-align: center;
 }
-a{
-  color: none;
-  text-decoration: none;
+
+/**
+|--------------------------------------------------
+| Experience section
+|--------------------------------------------------
+*/
+
+.exp-info{
+  padding: 30px;
 }
-    
+ 
