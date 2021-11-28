@@ -50,7 +50,7 @@ function NavBar() {
                                     <Nav.Link href='/' >HOME</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link href='/'>ABOUT</Nav.Link>
+                                    <Nav.Link href='/About'>ABOUT</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link href='/Design'>DESIGN</Nav.Link>

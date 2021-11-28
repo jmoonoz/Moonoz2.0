@@ -2,22 +2,22 @@ import { Container, Col, Row } from 'react-bootstrap';
 
 function About() {
     return (
-        <Container id='About' fluid>
+        <Container id='About' className='banner-block about-block' fluid>
             <Container>
                 <Row >
-                    <Col className='sec-text sm-sec-text'  sm={3}>
-                        <h2>
-                            About
-                        </h2>
-                        <p>sjf laksjdf;lk </p>
+                    <Col sm={6}>
+                    <div class="banner-divider">
+                                <h1 class="banner-title">
+                                    Joel
+                                    <br />
+                                    Muñoz
+                                    <i class="fab fa-linkedin-in"></i>
+                                </h1>
+                                <p class="banner-text">Front-end Developer &amp; Graphic Designer</p>
+                            </div>
 
                     </Col>
-                    <Col className='right-col'sm={8}>
-                    <p>
-                        djfsfush
-                    </p>
-
-                    </Col>
+                    
                 </Row>
 
             </Container>

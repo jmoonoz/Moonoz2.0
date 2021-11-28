@@ -43,7 +43,7 @@ function Home() {
 
                         </Col>
                         <Col className='right-col' sm={8}>
-                            <Row>
+                            <Row className='sm-margin'>
 
                                 <h3>
                                     Hello, My name is Joel Muñoz!
@@ -53,9 +53,6 @@ function Home() {
                                     I'm Software Engineer. My expertise is in Front End Development to create stunning user friendly experience. Welcome to my work, have a look around and enjoy!
                                 </p>
                             </Row>
-                            <Row>
-                                <ProgressBar animated now={60} />
-                            </Row>
                         </Col>
                     </Row>
 
@@ -63,7 +60,7 @@ function Home() {
             </Container>
             <Container id='Experience' fluid>
                 <Container>
-                    <Row>
+                    <Row className='sm-margin'>
                         <Col className='sec-text sm-sec-text' sm={3}>
                             <h2>
                                 Experience
@@ -72,17 +69,22 @@ function Home() {
 
                         </Col>
                         <Col className='right-col' sm={8}>
-                            <Row className='sec-text-align' >
-                                <Col className='exp-info'>
-                                    {/* icon  */}
+                            <Row className='sec-text-align exp-bg' >
+                                <Col className='exp-info' sm={4}>
+                                    
                                     <h5>
                                         Languages I Code:
                                     </h5>
                                     <p>HTML, CSS, JavaScript, C++, Python</p>
                                 </Col>
-                                <Col className='exp-info'>
+                                <Col className='exp-info middle-sec' sm={4}>
                                     <h5>Building tools:</h5>
                                     <p> React, Bootstrap, Chrome Dev. Tool, Git, Visual Studios, Xcode, Terminal</p>
+                                </Col>
+                                <Col className='exp-info' sm={4}>
+                                <h5>Designer Tools:</h5>
+                                <p>Affinity Designer, Blender, Illustrator, Photoshop, Procreate </p>
+                                    
                                 </Col>
                             </Row>
                         </Col>
