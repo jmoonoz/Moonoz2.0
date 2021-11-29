@@ -9,6 +9,10 @@ $primary-red: rgb(95, 41, 55);
 | universal sections
 |--------------------------------------------------
 */
+::selection,  .middle-sec{
+  background: rgb(95, 41, 55);
+  color: $primary-white !important;
+}
 
 
 a{
@@ -187,6 +191,10 @@ li {
   padding-left: 5px;
 }
 
+.text-color{
+  color: $primary-white !important;
+}
+
 /**
 |--------------------------------------------------
 | Banner "header"
@@ -310,6 +318,10 @@ span{
 
   .banner-divider{
     padding: 0 15px !important;
+  }
+
+  .exp-info{
+    text-align: left;
   }
 
   .sm-margin, .exp-bg{

@@ -79,7 +79,7 @@ function Home() {
                                 </Col>
                                 <Col className='exp-info middle-sec' sm={4}>
                                     <h5>Building tools:</h5>
-                                    <p> React, Bootstrap, Chrome Dev. Tool, Git, Visual Studios, Xcode, Terminal</p>
+                                    <p class='text-color' > React, Bootstrap, Chrome Dev. Tool, Git, Visual Studios, Xcode, Terminal</p>
                                 </Col>
                                 <Col className='exp-info' sm={4}>
                                 <h5>Designer Tools:</h5>
