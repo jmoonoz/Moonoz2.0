@@ -9,7 +9,7 @@
       name="description"
       content="Web site created using create-react-app"
     />
-   
+
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <!-- email js -->
     <script
@@ -21,6 +21,46 @@
         emailjs.init(${process.env.REACT_APP_USER_KEY});
       })();
     </script>
+
+    <script
+      src="https://unpkg.com/react/umd/react.production.min.js"
+      crossorigin
+    ></script>
+
+    <script
+      src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+
+    <script
+      src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
+      crossorigin
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+
+    <script>
+      var Alert = ReactBootstrap.Alert;
+    </script>
+
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap"
+      rel="stylesheet"
+    />
+    <title>Joel Munoz</title>
+  </head>
+  <body id="body" data-spy="scroll" data-target=".banner-block">
+    <div id="root"></div>
+
     <!-- bootstrap bundles -->
     <link
       rel="stylesheet"
@@ -28,33 +68,12 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
-
+    <!-- masonry for bootstrap 5 -->
     <script
-      src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"
-      crossorigin></script>
-
-    <script
-      src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
-      crossorigin></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-
-    <script>var Alert = ReactBootstrap.Alert;</script>
-    <!-- icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
-    <title>Joel Munoz</title>
-  </head>
-  <body id="body" data-spy="scroll" data-target=".banner-block" >
-    <div id="root"></div>
-
-    
-
-    
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
   </body>
 </html>

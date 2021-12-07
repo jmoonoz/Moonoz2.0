@@ -2,7 +2,11 @@ import Banner from './Banner';
 import About from './About';
 import Design from './Design';
 import Shop from './Shop';
+import MasonryGrid from './MasonryGrid';
+
 import { Container, Col, ProgressBar, Row, ListGroup, ListGroupItem } from 'react-bootstrap';
+
+
 
 function Home() {
     return (
@@ -71,7 +75,7 @@ function Home() {
                         <Col className='right-col' sm={8}>
                             <Row className='sec-text-align exp-bg' >
                                 <Col className='exp-info' sm={4}>
-                                    
+
                                     <h5>
                                         Languages I Code:
                                     </h5>
@@ -82,9 +86,9 @@ function Home() {
                                     <p class='text-color' > React, Bootstrap, Chrome Dev. Tool, Git, Visual Studios, Xcode, Terminal</p>
                                 </Col>
                                 <Col className='exp-info' sm={4}>
-                                <h5>Designer Tools:</h5>
-                                <p>Affinity Designer, Blender, Illustrator, Photoshop, Procreate </p>
-                                    
+                                    <h5>Designer Tools:</h5>
+                                    <p>Affinity Designer, Blender, Illustrator, Photoshop, Procreate </p>
+
                                 </Col>
                             </Row>
                         </Col>
@@ -102,11 +106,10 @@ function Home() {
                             <p>Take a look at the mind of Moonoz and see my thoughts come to life!</p>
 
                         </Col>
-                        <Col className='grid' sm={8}>
-                            <div class='row' >
-
-                            </div>
-
+                        <Col className='right-col' sm={8}>
+                            <Container>
+                                <MasonryGrid />
+                            </Container>
                         </Col>
                     </Row>
                 </Container>
