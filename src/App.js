@@ -7,8 +7,7 @@ import About from './components/About';
 import {
   BrowserRouter,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 function App() {

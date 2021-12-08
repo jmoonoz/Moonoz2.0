@@ -1,10 +1,6 @@
-import Banner from './Banner';
-import About from './About';
-import Design from './Design';
-import Shop from './Shop';
 import MasonryGrid from './MasonryGrid';
 
-import { Container, Col, ProgressBar, Row, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Container, Col, Row } from 'react-bootstrap';
 
 
 
