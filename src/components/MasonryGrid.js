@@ -1,10 +1,11 @@
 
 import { Col, Row } from 'react-bootstrap';
 import Masonry from 'masonry-layout';
-import ImageOne from '../img/01.1.jpg';
+import ImageOne from "../img/designs/Halloween-Ducks.jpg";
 import ImageTwo from '../img/designs/CalaveraDeLaLuna.jpg';
 import ImageThree from '../img/designs/CourageDisney.jpg';
 import ImageFour from '../img/designs/mirrorMirror.jpg';
+import ImageFive from '../img/designs/Mouseketeer.jpg';
 const grid = document.querySelector('.grid');
 
 const masonry = new Masonry(grid, {
@@ -34,7 +35,7 @@ function MasonryGrid() {
                 <Col className='grid-item ' sm={6} md={4}><img src={ImageTwo} alt=''></img></Col>
                 <Col className='grid-item grid-item--height2 ' sm={6} md={4}><img src={ImageThree} alt=''></img></Col>
                 <Col className='grid-item grid-item--height2 ' sm={6} md={4}><img src={ImageFour} alt=''></img></Col>
-                <Col className='grid-item grid-item--height2 ' sm={6} md={4}><img src={ImageOne} alt=''></img></Col>
+                <Col className='grid-item grid-item--height2 ' sm={6} md={4}><img src={ImageFive} alt=''></img></Col>
                 {/* <div class="grid-item"><img src={ImageOne}></img></div>
                 <div class="grid-item grid-item--width2 grid-item--height2"><img src={ImageOne}></img></div>
                 <div class="grid-item grid-item--height3">item 3</div> */}

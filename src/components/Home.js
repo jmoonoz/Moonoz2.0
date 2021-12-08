@@ -41,20 +41,23 @@ function Home() {
 
                         <Col className='sec-text sm-sec-text' sm={3}>
                             <h2>
-                                About
+                                Intro
                             </h2>
-                            <p></p>
+                            <p>Get to know me</p>
 
                         </Col>
                         <Col className='right-col' sm={8}>
                             <Row className='sm-margin'>
 
-                                <h3>
-                                    Hello, My name is Joel Muñoz!
+                                {/* <h3>
+                                    Hello,
                                 </h3>
+                                <h3>
+                                    My name is Joel Muñoz!
+                                </h3> */}
 
-                                <p>
-                                    I'm Software Engineer. My expertise is in Front End Development to create stunning user friendly experience. Welcome to my work, have a look around and enjoy!
+                                <p >
+                                    Hey! my name is Joel Muñoz and I'm Software Engineer. My expertise is in Front End Development to create stunning user friendly experience. Welcome to my work, have a look around and enjoy!
                                 </p>
                             </Row>
                         </Col>
@@ -63,38 +66,36 @@ function Home() {
                 </Container>
             </Container>
             <Container id='Experience' fluid>
-                <Container>
-                    <Row className='sm-margin'>
-                        <Col className='sec-text sm-sec-text' sm={3}>
-                            <h2>
-                                Experience
-                            </h2>
-                            <p>Here to code you a pixel perfect web</p>
 
-                        </Col>
-                        <Col className='right-col' sm={8}>
-                            <Row className='sec-text-align exp-bg' >
-                                <Col className='exp-info' sm={4}>
+                <Row className='sm-margin'>
+                    <Col className='sec-text sm-sec-text' sm={3}>
+                        <h2>
+                            Experience
+                        </h2>
+                        <p>Here to code you a pixel perfect web</p>
 
-                                    <h5>
-                                        Languages I Code:
-                                    </h5>
-                                    <p>HTML, CSS, JavaScript, C++, Python</p>
-                                </Col>
-                                <Col className='exp-info middle-sec' sm={4}>
-                                    <h5>Building tools:</h5>
-                                    <p class='text-color' > React, Bootstrap, Chrome Dev. Tool, Git, Visual Studios, Xcode, Terminal</p>
-                                </Col>
-                                <Col className='exp-info' sm={4}>
-                                    <h5>Designer Tools:</h5>
-                                    <p>Affinity Designer, Blender, Illustrator, Photoshop, Procreate </p>
+                    </Col>
+                    <Col className='right-col' sm={8}>
+                        <Row className='sec-text-align exp-bg' >
+                            <Col className='exp-info' sm={4}>
 
-                                </Col>
-                            </Row>
-                        </Col>
-                    </Row>
-                </Container>
+                                <h5>
+                                    Languages I Code:
+                                </h5>
+                                <p>HTML, CSS, JavaScript, C++, Python</p>
+                            </Col>
+                            <Col className='exp-info middle-sec' sm={4}>
+                                <h5>Building tools:</h5>
+                                <p class='text-color' > React, Bootstrap, Chrome Dev. Tool, Git, Visual Studios, Xcode, Terminal</p>
+                            </Col>
+                            <Col className='exp-info' sm={4}>
+                                <h5>Designer Tools:</h5>
+                                <p>Affinity Designer, Blender, Illustrator, Photoshop, Procreate </p>
 
+                            </Col>
+                        </Row>
+                    </Col>
+                </Row>
             </Container>
             <Container id='Design' fluid>
                 <Container>
