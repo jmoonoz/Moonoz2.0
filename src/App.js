@@ -1,5 +1,5 @@
 import Home from './components/Home';
-import Nav from './components/NavBar.js';
+import Nav from './components/NavBar';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Design from './components/Design';
